@@ -8,7 +8,7 @@ export default function Alerts() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await axios.get("http://127.0.0.1:8000/workloads");
+            const res = await axios.get("https://hilti-greenguard.onrender.com/workloads");
 
             const risky = (res.data.workloads || []).filter(
                 (w: any) => w.analysis.overall > 40

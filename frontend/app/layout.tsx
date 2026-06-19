@@ -18,7 +18,7 @@ export default function RootLayout({
     let previousRiskCount = 0;
 
     const fetchAlerts = async () => {
-      const res = await fetch("http://127.0.0.1:8000/workloads");
+      const res = await fetch("https://hilti-greenguard.onrender.com/workloads");
       const data = await res.json();
 
       const risky = (data.workloads || []).filter(

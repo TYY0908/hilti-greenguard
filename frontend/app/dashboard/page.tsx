@@ -44,7 +44,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await axios.get("http://127.0.0.1:8000/workloads");
+            const res = await axios.get("https://hilti-greenguard.onrender.com/workloads");
             setData(res.data.workloads || []);
         };
 
