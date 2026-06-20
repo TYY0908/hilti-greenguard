@@ -14,7 +14,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://hilti-greenguard.vercel.app/",
+        "https://hilti-greenguard.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
