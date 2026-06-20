@@ -52,6 +52,14 @@ export default function Dashboard() {
         return () => clearInterval(interval);
     }, []);
 
+    {
+        loading && (
+            <div className="text-sm text-blue-400 animate-pulse mb-4">
+                🔄 Scanning cloud environment...
+            </div>
+        )
+    }
+
     const avgRisk =
         data.length > 0
             ? (
